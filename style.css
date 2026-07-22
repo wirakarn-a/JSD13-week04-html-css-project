@@ -44,18 +44,20 @@ body {
 }
 
 .logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem;
+  font-family:initial;
+  font-size: 1.8rem;
   font-weight: 300;
   padding-top: 20px;
   padding-bottom: 10px;
   letter-spacing: 6px;
-  color: #1a1a1a;
+  color: #420d19;
 }
 
 .navbar nav a {
-  color: black;
+  color: #533146;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
+  font-weight: bold;
   margin-left: 30px;
   font-size: 0.9rem;
   font-weight: 400;
@@ -64,7 +66,7 @@ body {
 }
 
 .navbar nav a:hover {
-  color: #b8966e;
+  color: #64aac3;
 }
 
 /* Banner */
@@ -81,7 +83,7 @@ body {
 }
 
 .banner h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family:initial;
   font-size: 2.6rem;
   font-weight: 300;
   margin-bottom: 12px;
@@ -90,6 +92,7 @@ body {
 
 .banner p {
   font-size: 1.1rem;
+  font-family: cursive;
   font-weight: 300;
   opacity: 0.85;
   letter-spacing: 1px;
@@ -159,6 +162,11 @@ body {
 }
 
 /* Collection */
+.collection-grid h3 {
+    font-family: cursive;
+    color: #5a4743;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -201,6 +209,11 @@ body {
 }
 
 /* Product */
+.product-grid h3 {
+    font-family: cursive;
+    color: #5a4743;
+}
+
 .pcol-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -264,4 +277,21 @@ footer {
   margin-top: 40px;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 3 / span 6;}
+  .footer {grid-area: 4 / span 6;}
+}
+
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
 }
