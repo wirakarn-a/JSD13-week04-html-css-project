@@ -204,6 +204,7 @@ body {
 .pcol-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
   gap: 24px;
   margin: 30px 0;
 }
@@ -215,6 +216,11 @@ body {
   border-radius: 16px;
   border: 1px solid #eee;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 280px;
 }
 
 .pcol-grid__item:hover {
@@ -240,4 +246,22 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: #2c2c2c;
+}
+
+.pcol-grid__item .price {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4fc3f7;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #999;
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
 }
