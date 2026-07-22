@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafaf8;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  color: #1a1a1a;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tapbar {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: aqua;
+  padding: 3px;
+  gap: 16px;
+  padding-right: 30px;
+}
+
+.tapbar a {
+  color: blue;
+  text-decoration: none;
+}
