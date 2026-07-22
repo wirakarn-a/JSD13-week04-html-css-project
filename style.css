@@ -37,15 +37,10 @@ body {
     display: flex;
   justify-content: space-between;
   align-items: center;
-  background: aqua;
+  background: #d2e8ff;
   padding: 3px;
   gap: 16px;
   padding-right: 30px;
-}
-
-.tapbar a {
-  color: blue;
-  text-decoration: none;
 }
 
 .logo {
@@ -99,3 +94,67 @@ body {
   opacity: 0.85;
   letter-spacing: 1px;
 }
+
+/* Filters */
+.filters {
+  background: #fff;
+  padding: 24px;
+  margin: 30px 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fafaf8;
+  transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #b8966e;
+}
+
+/* Search Button */
+.search-box button {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #6ec6ff 0%, #4fc3f7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(110, 198, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-box button::before {
+  content: '🔍';
+  margin-right: 6px;
+}
+
+.search-box button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(110, 198, 255, 0.6);
+  background: linear-gradient(135deg, #42a5f5 0%, #6ec6ff 100%);
+}
+
+.search-box button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 10px rgba(255, 154, 158, 0.3);
+}
+
