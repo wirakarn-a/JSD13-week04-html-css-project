@@ -234,11 +234,31 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 280px;
+  position: relative;
 }
 
 .pcol-grid__item:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+  padding: 4px;
+}
+
+.wishlist-btn:hover {
+  color: #4fc3f7;
+  transform: scale(1.2);
 }
 
 .pcol-grid__item img {
@@ -266,6 +286,32 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   color: #4fc3f7;
+}
+
+.add-to-cart-btn {
+  margin-top: 12px;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #6ec6ff 0%, #4fc3f7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(110, 198, 255, 0.3);
+}
+
+.add-to-cart-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(110, 198, 255, 0.5);
+  background: linear-gradient(135deg, #42a5f5 0%, #6ec6ff 100%);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 8px rgba(110, 198, 255, 0.3);
 }
 
 /* Keep in touch */
@@ -424,6 +470,17 @@ footer {
     padding: 16px;
   }
 
+  .wishlist-btn {
+    font-size: 1.2rem;
+    top: 8px;
+    right: 8px;
+  }
+
+  .add-to-cart-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
   .card-grid__item img,
   .pcol-grid__item img {
     width: 120px;
@@ -458,7 +515,7 @@ footer {
   }
 }
 
-/* Desktop / คอมพิวเตอร์ ขนาดใหญ่ - min-width 1440px */
+/* Desktop - min-width 1440px */
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1400px;
